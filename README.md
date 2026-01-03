@@ -50,60 +50,6 @@ I'll be calculating:
 - Rank-biserial correlation for Mann-Whitney results  
 - Epsilon-squared for Kruskal-Wallis results
 
-## Project Layout
-```
-├── data/
-│   ├── raw/                    # Original CSV file goes here
-│   └── processed/              # Cleaned versions
-│
-├── notebooks/
-│   ├── 01_exploration.ipynb              # First look at the data
-│   ├── 02_cleaning.ipynb                 # Handling missing values, outliers
-│   ├── 03_hypothesis_tests.ipynb         # Running the statistical tests
-│   ├── 04_effect_sizes.ipynb             # Calculating effect magnitudes
-│   └── 05_findings.ipynb                 # Pulling it all together
-│
-├── src/
-│   ├── load_data.py            # Helper functions for loading
-│   ├── clean_data.py           # Cleaning functions
-│   ├── plot_utils.py           # Custom plotting code
-│   └── stats_tests.py          # Statistical test wrappers
-│
-├── visuals/                    # Saved plots and charts
-├── requirements.txt
-└── README.md
-```
-
-## Getting Started
-```bash
-# Grab the code
-git clone https://github.com/your-username/ebike-demand-factors.git
-cd ebike-demand-factors
-
-# Set up a virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install what you need
-pip install -r requirements.txt
-
-# Fire up Jupyter
-jupyter notebook
-```
-
-Then just work through the notebooks in order (01, 02, 03, etc.).
-
-## What You'll Need Installed
-
-- Python 3.8 or newer
-- pandas (data wrangling)
-- numpy (math stuff)
-- matplotlib & seaborn (making graphs)
-- scipy (statistical tests)
-- scikit-learn (some utilities)
-
-Everything's in `requirements.txt` so the pip install command above handles it.
-
 ## What We're Looking For
 
 By the end of this, we should know:
@@ -117,29 +63,6 @@ By the end of this, we should know:
 ## Current Status
 
 🚧 Work in progress - starting with basic exploration
-
-## Things to Keep in Mind
-
-This is real-world data, so:
-- There might be outliers (that one day it poured for 12 hours straight)
-- Some variables are probably correlated with each other (temp and "feels like temp")
-- Patterns might vary by user type (casual vs. registered)
-
-Part of the analysis is figuring out how to handle these quirks properly.
-
-## Contact
-
-Questions? Thoughts? Found something interesting?
-
-Hit me up:
-- GitHub: @your-username  
-- Email: your.email@example.com
-
-## What I'm Learning From This
-
-- How to properly test hypotheses when data doesn't play nice
-- The difference between statistical significance and practical significance
-- How to communicate findings without just dumping a bunch of p-values on people
 
 ---
 
